@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Amazon Shipping Calculator
+    </title>
+</head>
+
+<body>
+    <p>AMAZON SHIPPING CALCULATOR</p>
+
+    <input placeholder="TYPE THE COST" class="js-cost-input">
+    <button class="js-cost">CALCULATE</button>
+
+    <p class="js-result"></p>
+
+    <script>
+        const input = document.querySelector('.js-cost-input');
+        const button = document.querySelector('.js-cost');
+        const result = document.querySelector('.js-result');
+
+        button.addEventListener('click', function() {
+            let cost = Number(input.value);
+
+            if (cost > 40) {
+                result.innerHTML = "Final Cost: $" + cost;
+            } else {
+                result.innerHTML = "Final Cost: $" + (cost + 10);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

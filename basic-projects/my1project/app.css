@@ -1,0 +1,59 @@
+/* Container styles */
+body {
+  background-color: black;
+  color: yellow;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Title styling */
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: yellow;
+}
+
+/* Emoji buttons style */
+.circle, .ciircle, .cirrcle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 30px;
+  font-size: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 100px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  background-color: white; /* default background */
+}
+
+/* Score and result container */
+.result {
+  font-size: 28px;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+  min-height: 40px; /* to reserve space */
+}
+
+/* Score text */
+.playerScore, .computerScore {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Additional spacing */
+p {
+  margin: 10px 0;
+}
+
+.js-cc{
+  margin-top: 10px;
+  padding: 15px;
+  color: brown;
+  cursor: pointer;
+}
